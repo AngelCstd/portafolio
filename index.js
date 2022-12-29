@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     $experiencia = document.getElementById("experiencia"),
     $proyectos = document.getElementById("proyectos");
 
-    fetch("/assets/portafolio.json")
+    fetch("assets/portafolio.json")
     .then(res => res.json())
     .then(json => {
         json.proyectos.forEach(element => proyectos += Proyectos(element));
