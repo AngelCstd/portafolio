@@ -14,13 +14,13 @@
             "title":"Launch X programa de Microsoft",
             "details":"Conoci a fondo Javascript, asi como NodeJS y React, tambien adquiri conocimientos con SASS, HTML, SQL, NOSQL, basicos de Azure, Testing, Debug, CSS, Figma, entre otras tecnologias complementarias",
             "fecha":"Septiembre 2022 - Enero 2023",
-            "img":"/assets/img/LaunchX1.png"
+            "img":"assets/img/LaunchX1.png"
         },
         {
             "title":"Oracle Next Education",
             "details":"He aprendido HTML, CSS y Javascript, asi como Git y GitHub, planeo tomar la ruta de backend para fortalecer mis conocimientos en Java y su framework Spring",
             "fecha":"Noviembre 2022 - Mayo 2023",
-            "img":"/assets/img/ONE.png"
+            "img":"assets/img/ONE.png"
         }
     ],
     "experiencia":[

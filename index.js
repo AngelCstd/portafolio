@@ -2,9 +2,11 @@ import { Becas } from "./components/Becas.js";
 import { Experiencia } from "./components/Experience.js";
 import { Proyectos } from "./components/Proyectos.js";  
 
-document.querySelector("header").addEventListener("click", ()=>{
-    let $nav = document.querySelector("header nav");
-    $nav.classList.toggle("visible");
+document.addEventListener("click", (e)=>{
+    if(e.target.matches("#menu") || e.target.matches("nav a") || e.target.matches("#close")){
+        let $nav = document.querySelector("header nav");
+        $nav.classList.toggle("visible");
+    }    
 })
 
 document.addEventListener("DOMContentLoaded", ()=>{
@@ -15,7 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     $experiencia = document.getElementById("experiencia"),
     $proyectos = document.getElementById("proyectos");
 
-    fetch("/assets/portafolio.json")
+    fetch("assets/portafolio.json")
     .then(res => res.json())
     .then(json => {
         json.proyectos.forEach(element => proyectos += Proyectos(element));

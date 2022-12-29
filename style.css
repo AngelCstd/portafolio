@@ -33,7 +33,20 @@ header{
     overflow: hidden;
     height: 10vh;
 }
-header > nav{
+#menu{
+    position: absolute;
+    font-size: 2rem;
+    top: 20%;
+    right: 5%;
+}
+#close{
+    color: white;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2rem;
+}
+nav{
     position: fixed;
     width: 100vw;
     height: 100vh;
