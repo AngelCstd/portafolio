@@ -3,10 +3,11 @@ export function Proyectos(props) {
     <img src="${props.img}" alt="${props.title}">
     <div>
         <h4>${props.title}</h4>
-        <p>${props.details}</p>
         <small>${props.tecnologias}</small>
-        <a href="${props.proyect}">ver proyecto</a>
-        <a href="${props.repository}" target="_blank" rel="noopener noreferrer">repository</a>
+        <div class="containerGrid">
+        <a class="button" href="${props.proyect}" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Website</a>
+        <a class="button" href="${props.repository}" target="_blank" rel="noopener noreferrer"><i class="bi bi-globe"></i> Repository</a>
+    </div>
     </div>
 </figure>`
 }

@@ -4,9 +4,10 @@ import { Proyectos } from "./components/Proyectos.js";
 
 document.addEventListener("click", (e)=>{
     if(e.target.matches("#menu") || e.target.matches("nav a") || e.target.matches("#close")){
-        let $nav = document.querySelector("header nav");
-        $nav.classList.toggle("visible");
-    }    
+        document.querySelector("header nav").classList.toggle("visible");
+    } 
+    if(e.target.matches("figure img")) e.path[1].children[1].classList.toggle("visible")
+    if(e.target.matches("figure div.visible")) e.target.classList.toggle("visible")
 })
 
 document.addEventListener("DOMContentLoaded", ()=>{
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     experiencia = "",
     $becas = document.getElementById("becas"),
     $experiencia = document.getElementById("experiencia"),
-    $proyectos = document.getElementById("proyectos");
+    $proyectos = document.getElementById("proyects");
 
     fetch("assets/portafolio.json")
     .then(res => res.json())

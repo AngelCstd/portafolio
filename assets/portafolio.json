@@ -4,7 +4,15 @@
             "title":"Catalogo Alondra",
             "details":"Catalogo SOLO TELEFONOS",
             "tecnologias":"HTML, CSS, Javascript, NodeJS, MySQL, Azure",
-            "img":"",
+            "img":"assets/img/LaunchX1.png",
+            "proyect":"https://angelcstd.github.io/Catalogo_Alondra/",
+            "repository":"https://github.com/AngelCstd/Catalogo_Alondra"
+        },
+        {
+            "title":"Catalogo Alondra",
+            "details":"Catalogo SOLO TELEFONOS",
+            "tecnologias":"HTML, CSS, Javascript, NodeJS, MySQL, Azure",
+            "img":"assets/img/ONE.png",
             "proyect":"https://angelcstd.github.io/Catalogo_Alondra/",
             "repository":"https://github.com/AngelCstd/Catalogo_Alondra"
         }
@@ -24,17 +32,6 @@
         }
     ],
     "experiencia":[
-        {
-            "puesto":"Freelance | FullStack jr",
-            "fecha":"Noviembre 2022 - Diciembre 2022",
-            "empresa":"Alondra Nails",
-            "details":[
-                "Análisis de requerimientos y diseño de Single Page Aplication ",
-                "Administracion, creacion y mantenimiento de base de datos relacionales",
-                "Elaboracion de API para el consumo de los datos",
-                "Manejo de la API de Azure storage para el manejo de las imagenes en la base de datos"
-            ]
-        },
         {
             "puesto":"Freelance | FullStack jr",
             "fecha":"Noviembre 2022 - Diciembre 2022",

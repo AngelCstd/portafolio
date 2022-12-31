@@ -1,5 +1,5 @@
 export function Becas(props) {
-    return `<div class="containerGrid">
+    return `<div>
     <div>
     <p>${props.fecha}</p>
     <h4>${props.title}</h4>

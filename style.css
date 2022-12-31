@@ -8,126 +8,201 @@ body{
     font-size: 13px;
     overflow-x: hidden;
 }
-.containerFlex{
+/* GENERALES */
+main, section, nav, nav ul, figure div{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-img{
-    width: 50px;
 }
 .containerGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     place-items: center;
-    gap: 5vw;
+    gap: 3vw;
+}
+main, section{
+    gap: 5vh;
+}
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+section{
+    margin-bottom: 5vh;
+}
+section > div{
+    width: 90%;
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+#about > div, #formacion div.containerGrid > div{
+    border: 1px solid black;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+a.button{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+.iconImg{
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}
+.iconImg img{
+    width: 50px;
 }
 /*HEADER*/
 header{
     position: sticky;
     top: 0;
-    left: 0;
     background-color: #fff;
-    overflow: hidden;
     height: 10vh;
+    z-index: 10;
 }
 #menu{
     position: absolute;
-    font-size: 2rem;
-    top: 20%;
+    font-size: 2.5rem;
+    top: 10%;
     right: 5%;
 }
 #close{
     color: white;
     position: absolute;
-    top: 2%;
+    top: 1.5%;
     right: 5%;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 nav{
     position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: #000;
-    z-index: 10;
+    z-index: 11;
     right: -120%;
     transition: transform .5s;
 }
 nav ul{
     gap: 5vh;
     font-size: 1.5rem;
-}
-nav li{
     list-style: none;
 }
 nav a{
     text-decoration: none;
-    width: 100%;
     color: #fff;
 }
-/* SECTION Y MAIN*/
+/*MAIN*/
 main{
     height: 90vh;
 }
-section{
-    margin-bottom: 5vh;
+main p{
+    font-size: 1rem;
 }
-main, section{
-    padding: 0 1rem;
+/* ABOUT */
+#about img{
+    clip-path: circle(50% at 50% 50%);
+    width: 50%;
 }
-h2{
-    text-align: center;
-    margin: 5vh;
+#about p{
+    font-size: .9rem;
 }
-div.containerFlex{
-    flex-direction: row;
+#about div.containerGrid{
+    gap: 5vh;
 }
-.icon{
-    width: 50vw;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+/* SERVICES */
+#services > img{
+    width: 90%;
 }
-main h2{
-    margin: 0;
-}
+
+
+
+
+
 .experiencias{
     align-items: stretch;
 
 }
-#experiencia div, #becas div.containerGrid, #about div.about{
-    border: 1px solid black;
-    padding: 2rem;
-    border-radius: 30px;
-}
 #becas img{
     width: 100%;
-    /*width: 45vh; pG*/
 }
 #becas{
     align-items: stretch;
 }
-#becas div.containerGrid{
-    /*max-height: 90vh; pG*/
-    grid-template-columns: 1fr;
-    width: 90vw;
+#proyects{
+    width: 100%;
 }
-.about{
-    /* grid-template-columns: repeat(2,minmax(200px, 1fr)); pG */
-    grid-template-columns: 1fr;
+
+figure{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
-#service div.containerFlex{
-    flex-direction: column;
-    gap: 2rem;
+figure img{
+    width: 100%;
+    padding: 5%;
+    border-radius: 20px;
 }
-img.git{
-    width: 90vw;
+figure > div{
+    position: absolute;
+    background-color: rgba(171, 171, 171, 0.621);
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    color: #fff;
+    top: 100%;
+    transition: transform .5s;
+    flex-wrap: wrap;
+}
+figure div.containerGrid{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+figure h4{
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+figure small{
+    width: 70%;
+    text-align: center;
+    
 }
 nav.visible{
     transform: translateX(-120%);
 }
+figure a.button{
+    font-size: .8rem;
+    width: 80%;
+    text-align: center;
+}
+figure div.visible{
+    transform: translateY(-100%); 
+}
+div.visible ~ img {
+    padding: 0px;
+}
+img{
+    width: 50px;
+}
 @media (min-width:1279px) {
     main, section{
         padding: 0 8rem;
+    }
+    figure:hover > div{
+        transform: translateY(-100%);
+    }
+    figure:hover > img{
+        padding: 0;
+    }
+}
+@media (min-width:481px) {
+    main, section{
+        padding: 0 3rem;
     }
 }

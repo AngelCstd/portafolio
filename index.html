@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngelCstd</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
     <header>
-        <span class="material-icons" id="menu">menu</span>
-        <nav class="containerFlex">
-            <span class="material-icons" id="close">close</span>
-            <ul class="containerFlex">
+        <i class="bi bi-list" id="menu"></i>
+        <nav>
+            <i class="bi bi-x" id="close"></i>
+            <ul>
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -24,77 +23,74 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#experiencia">Experience</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#proyectos">Proyects</a>
+                    <a href="#formacion">Experience</a>
                 </li>
                 <li>
-                    <a href="#contacto">Contact</a>
+                    <a href="#proyects">Proyects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main id="home" class="containerFlex">
-        <div>
-            <h2>Angel Castañeda</h2>
-            <p>Developer Full Stack Jr</p>
-        </div>
+    <main id="home">
+        <h2>Angel Castañeda</h2>
+        <p>Developer Full Stack Jr</p>
     </main>
     <section id="about">
-        <h2>About me</h2>
-        <div class="containerGrid about">
-            <div>
+        <h2>About Me</h2>
+        <div class="containerGrid">
+            <img src="./assets/img/aboutMe.jfif" alt="foto">
                 <p>Eterno autodidacta en el area de desarrollo web con un año de experiencia en el sector. Actualmente
-                    entrego proyectos para pequeñas empresas y grandes emprendedores.
-                </p>
-                <p> Busco
+                    entrego proyectos para pequeñas empresas y grandes emprendedores. 
+                    <br><br> 
+                    Busco
                     oportunidades para hacer practicas y/o trabajar en el área de desarrollo web, para poder crecer
                     junto
                     con la empresa y compañeros, así como desarrollar todos mis conocimientos para obtener los mejores
                     resultados.
                 </p>
-            </div>
-            <img src="./assets/img/aboutMe.jfif" alt="foto">
-            <a href="./assets/CV_Angel_Castaneda.pdf" download="CV_Angel_Castañeda">Download CV</a>
+            <a href="./assets/CV_Angel_Castaneda.pdf" download="CV_Angel_Castañeda" class="button">Download CV</a>
         </div>
     </section>
-    <section id="service" class="containerFlex">
+    <section id="services">
         <h2>Languages and Tools:</h2>
-        <div class="containerFlex">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=angelcstd&show_icons=true&locale=en&layout=compact"
-                alt="angelcstd" class="git" />
-            <div class="containerGrid icon">
-                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                        alt="css3" />
-                </a>
-                <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" />
-                </a>
-                <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" />
-                </a>
-                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                        alt="html5" />
-                </a>
-                <a href="https://www.java.com" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-                        alt="java" />
-                </a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                        alt="javascript" />
-                </a>
-                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                        alt="mysql" />
-                </a>
-            </div>
+        <div class="containerGrid iconImg">
+            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                    alt="css3" />
+            </a>
+            <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" />
+            </a>
+            <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" />
+            </a>
+            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                    alt="html5" />
+            </a>
+            <a href="https://www.java.com" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="java" />
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="javascript" />
+            </a>
+            <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                    alt="mysql" />
+            </a>
         </div>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=angelcstd&show_icons=true&locale=en&layout=compact"
+        alt="angelcstd"/>
     </section>
-    <section class="containerFlex experiencias">
+    <section id="formacion">
         <div>
             <h2>Experiencia</h2>
             <div id="experiencia" class="containerGrid">
@@ -108,16 +104,16 @@
             </div>
         </div>
     </section>
-    <section class="containerFlex">
+    <section>
         <div>
             <h2>Proyectos</h2>
-            <div id="proyectos" class="containerGrid">
+            <div id="proyects" class="containerGrid">
             </div>
         </div>
     </section>
-    <section id="contacto" class="containerFlex">
+    <section id="contact">
         <h2>Contact me</h2>
-        <div class="containerGrid icon">
+        <div class="containerGrid iconImg">
             <a href="https://linkedin.com/in/angelcstd" target="blank">
                 <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
                     alt="www.linkedin.com/in/angelcstd" />
