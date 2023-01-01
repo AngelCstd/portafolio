@@ -6,7 +6,7 @@ document.addEventListener("click", (e)=>{
     if(e.target.matches("#menu") || e.target.matches("nav a") || e.target.matches("#close")){
         document.querySelector("header nav").classList.toggle("visible");
     } 
-    if(e.target.matches("figure img")) e.path[1].children[1].classList.toggle("visible")
+    if(e.target.matches("figure img")) e.path[1].children[0].classList.toggle("visible")
     if(e.target.matches("figure div.visible")) e.target.classList.toggle("visible")
 })
 

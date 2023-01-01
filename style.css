@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
 }
 /* GENERALES */
-main, section, nav, nav ul, figure div{
+section, .containerFlex, figure div, #formacion div.containerGrid div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +32,6 @@ section{
 }
 section > div{
     width: 90%;
-    /* align-self: center; */
-    /* justify-self: center; */
 }
 #about > div, #formacion div.containerGrid > div{
     border: 1px solid black;
@@ -44,9 +42,10 @@ a.button{
     border: 1px solid black;
     border-radius: 5px;
     padding: .5rem;
-    color: #000;
+    color: #fff;
+    background-color: #111;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
 }
@@ -55,6 +54,11 @@ a.button{
 }
 .iconImg img{
     width: 50px;
+}
+#formacion > div, #proyectos > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
 }
 /*HEADER*/
 header{
@@ -117,25 +121,33 @@ main p{
 #services > img{
     width: 90%;
 }
-
-
-
-
-
-.experiencias{
-    align-items: stretch;
-
+/* FORMACION */
+#formacion h4{
+    font-size: 1.1rem;
+    text-align: center;
+}
+#formacion div.containerGrid div{
+    gap: 1.5vw;
+}
+#formacion small{
+    font-size: .8rem;
+}
+#experiencia ul{
+    font-size: .9rem;
+    margin-top: 5%;
+}
+#becas p{
+    font-size: .9rem;
+    margin: 5% 0;
 }
 #becas img{
-    width: 100%;
+    width: 95%;
+    border-radius: 10px;
 }
-#becas{
-    align-items: stretch;
-}
+/* PROYECTOS */
 #proyects{
     width: 100%;
 }
-
 figure{
     width: 100%;
     position: relative;
@@ -145,50 +157,53 @@ figure{
 figure img{
     width: 100%;
     padding: 5%;
-    border-radius: 20px;
+    border-radius: 30px;
+    transition: padding .5s;
 }
 figure > div{
     position: absolute;
-    background-color: rgba(171, 171, 171, 0.621);
+    background-color: rgba(55, 55, 55, 0.534);
     width: 100%;
     height: 100%;
-    align-content: center;
     color: #fff;
     top: 100%;
     transition: transform .5s;
-    flex-wrap: wrap;
+    gap: 10%;
+    border-radius: 30px;
 }
 figure div.containerGrid{
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    margin-top: 1.5rem;
 }
 figure h4{
-    margin-bottom: 2rem;
     font-weight: 900;
     font-size: 1.2rem;
 }
 figure small{
-    width: 70%;
+    width: 80%;
     text-align: center;
-    
-}
-nav.visible{
-    transform: translateX(-120%);
+    font-size: .8rem;
+    font-weight: 500;
 }
 figure a.button{
     font-size: .8rem;
     width: 80%;
     text-align: center;
 }
+figure i{
+    vertical-align: baseline;
+    font-size: 1rem;
+    margin-right: .2rem;
+}
+/* ANIMACIONES */
+nav.visible{
+    transform: translateX(-120%);
+}
 figure div.visible{
     transform: translateY(-100%); 
 }
 div.visible ~ img {
     padding: 0px;
-}
-img{
-    width: 50px;
 }
 @media (min-width:1279px) {
     main, section{
