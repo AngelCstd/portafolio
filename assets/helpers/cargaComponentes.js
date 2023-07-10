@@ -17,6 +17,21 @@ const formacion = [
         informacion: "alura - 2023",
         titulo: "React Router",
     },
+    {
+        imagen: "./assets/img/LaunchX.png",
+        informacion: "alura - 2023",
+        titulo: "React Router",
+    },
+    {
+        imagen: "./assets/img/LaunchX.png",
+        informacion: "alura - 2023",
+        titulo: "React Router",
+    },
+    {
+        imagen: "./assets/img/LaunchX.png",
+        informacion: "alura - 2023",
+        titulo: "React Router",
+    },
 ];
 const skill = [
     {
