@@ -1,31 +1,70 @@
-import { Becas } from "./components/Becas.js";
-import { Experiencia } from "./components/Experience.js";
-import { Proyectos } from "./components/Proyectos.js";  
+import { valida } from "./assets/helpers/validaciones.js";
+import { creacionDiv } from "./assets/helpers/peticiones.js";
+import {
+    experienciaHTML,
+    formacionHTML,
+    skillHTML,
+} from "./assets/helpers/cargaComponentes.js";
 
-document.addEventListener("click", (e)=>{
-    if(e.target.matches("#menu") || e.target.matches("nav a") || e.target.matches("#close")){
-        document.querySelector("header nav").classList.toggle("visible");
-    } 
-    if(e.target.matches("figure img")) e.path[1].children[0].classList.toggle("visible")
-    if(e.target.matches("figure div.visible")) e.target.classList.toggle("visible")
-})
+// Validaciones
+const formulario = document.querySelector("#form"),
+    inputs = document.querySelectorAll("#form input"),
+    textArea = document.querySelector("#form textarea");
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    let becas ="",
-    proyectos = "",
-    experiencia = "",
-    $becas = document.getElementById("becas"),
-    $experiencia = document.getElementById("experiencia"),
-    $proyectos = document.getElementById("proyects");
+textArea.addEventListener("blur", ({ target }) => {
+    let inputTemporal = document.createElement("input");
+    inputTemporal.required = true;
+    inputTemporal.name = target.name;
+    inputTemporal.value = target.value;
+    inputTemporal.pattern = "^.{1,300}$";
+    valida({ target: inputTemporal }, target.nextElementSibling);
+});
+inputs.forEach((input) => {
+    input.addEventListener("blur", valida);
+});
 
-    fetch("assets/portafolio.json")
-    .then(res => res.json())
-    .then(json => {
-        json.proyectos.forEach(element => proyectos += Proyectos(element));
-        json.becas.forEach(element => becas += Becas(element));
-        json.experiencia.forEach(element => experiencia += Experiencia(element));
-        $becas.innerHTML += becas;
-        $experiencia.innerHTML += experiencia;
-        $proyectos.innerHTML += proyectos;
+// Componentes
+let experiencia = document.querySelector("div.experiencia-container"),
+    formacion = document.querySelector("div.academico-cursos"),
+    skill = document.querySelector(".skills__container")
+
+skill.innerHTML = skillHTML;
+experiencia.innerHTML = experienciaHTML;
+formacion.innerHTML = formacionHTML;
+
+// Fetch
+let progressContainer = document.querySelector(".progress_container"),
+    porcents = [];
+
+const handlerProgress = () => {
+    let child = document.querySelector(".progress_container h4"),
+        divs = document.querySelectorAll(".progress");
+    progressContainer.removeChild(child);
+    progressContainer.style.height = "10rem";
+    divs.forEach((div, index) => {
+        div.style.width = porcents[index] + "%";
+    });
+    document.querySelector(".progress_container").removeEventListener("click", handlerProgress);
+};
+
+const addPorcent = ({porcentajes, lenguajes, colores}) => {
+    let porcentHTML = "";
+    lenguajes.forEach(([key], index)=>{
+        let porcent = (porcentajes[index]+"").slice(0,4)
+        porcentHTML += `<div class="porcent__box">
+        <div class="color__box" style="background-color: ${colores[key]};"></div>
+        <p class="lenguaje">${key}  ${porcent}%</p>
+        </div>`
     })
-})
+    return porcentHTML
+}
+
+document.addEventListener("DOMContentLoaded", async (e) => {
+    let barra = document.querySelector(".progress_bar"),
+        divPorcents = document.querySelector(".progress_porcent"),
+        {porcentajes, lenguajes, colores} = await creacionDiv(barra);
+
+    porcents = porcentajes
+    divPorcents.innerHTML = addPorcent({porcentajes, lenguajes, colores})
+    progressContainer.addEventListener("click", handlerProgress);
+});
