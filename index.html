@@ -79,7 +79,7 @@
           </li>
           <li class="hero__network_item">
             <a href="./assets/CV_Angel_Castaneda.pdf" target="_blank"
-              >Currículo <img src=""
+              >CV<img src=""
             /></a>
           </li>
         </ul>
@@ -167,24 +167,23 @@
 
     <!-- Sección de Contacto -->
     <section class="formcontacto" id="contacto">
-      <h2 class="formcontacto-titulo">Contacto</h2>
-      <h3 class="formcontacto-subtitulo">¿Quieres contactarme?</h3>
-      <h3 class="formcontacto-subtitulo">
+      <h2 class="formcontacto__titulo">Contacto</h2>
+      <h3 class="formcontacto__subtitulo">
         Complete el siguiente formulario y me pondré en contacto con usted lo
         antes posible.
       </h3>
-      <form class="formcontacto-form" name="form" id="form">
+      <form class="formcontacto__form" name="form" id="form">
         <input
-          class="formcontacto-input formcontacto"
+          class="formcontacto__input formcontacto"
           type="text"
           required
           name="nombre"
           placeholder="Nombre"
-          pattern="^[A-Za-z]{0,50}$"
+          pattern="^.{1,50}$"
         />
         <span class="customError"></span>
         <input
-          class="formcontacto-input formcontacto"
+          class="formcontacto__input formcontacto"
           type="email"
           required
           name="email"
@@ -192,7 +191,7 @@
         />
         <span class="customError"></span>
         <input
-          class="formcontacto-input formcontacto"
+          class="formcontacto__input formcontacto"
           type="text"
           required
           name="asunto"
@@ -201,21 +200,21 @@
         />
         <span class="customError"></span>
         <textarea
-          class="formcontacto-textarea formcontacto"
-          rows="5"
+          class="formcontacto__textarea formcontacto"
+          rows="3"
           required
           cols="40"
           name="mensaje"
           placeholder="Mensaje"
         ></textarea>
         <span class="customError"></span>
-        <button type="submit" class="formcontacto-boton">Enviar mensaje</button>
+        <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
       </form>
     </section>
 
     <!-- Sección de Footer -->
     <section class="footer">
-      <div class="footer__rodape">
+      <div class="footer__rodapie">
         <p>Desarrollado por Angel Castañeda</p>
         <p>2023</p>
       </div>

@@ -4,7 +4,7 @@ import { Skill } from "../../components/Skill.js";
 
 const experiencia = [
     {
-        imagen: "./assets/img/LaunchX.png",
+        imagen: "./assets/img/LaunchX1.png",
         informacion: "Creado con JavaScript y React",
         titulo: "TinderFlix",
         github: "https:/",
@@ -13,25 +13,15 @@ const experiencia = [
 ];
 const formacion = [
     {
-        imagen: "./assets/img/LaunchX.png",
-        informacion: "alura - 2023",
-        titulo: "React Router",
+        imagen: "./assets/img/programadorJuniorOne.png",
+        informacion: "Oracle Next Education 2023",
+        titulo: "Graduado Programador Front-end junior ",
     },
     {
-        imagen: "./assets/img/LaunchX.png",
-        informacion: "alura - 2023",
-        titulo: "React Router",
-    },
-    {
-        imagen: "./assets/img/LaunchX.png",
-        informacion: "alura - 2023",
-        titulo: "React Router",
-    },
-    {
-        imagen: "./assets/img/LaunchX.png",
-        informacion: "alura - 2023",
-        titulo: "React Router",
-    },
+        imagen: "./assets/img/LaunchX1.png",
+        informacion: "Innovaccion virtual con Microsoft 2022",
+        titulo: "Beca para Launch X",
+    }
 ];
 const skill = [
     {
