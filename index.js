@@ -24,7 +24,7 @@ inputs.forEach((input) => {
 });
 
 // Componentes
-let experiencia = document.querySelector("div.experiencia-container"),
+let experiencia = document.querySelector("div.experiencia__container"),
     formacion = document.querySelector("div.academico__cursos"),
     skill = document.querySelector(".skills__container")
 

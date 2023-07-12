@@ -4,7 +4,8 @@ import { Skill } from "../../components/Skill.js";
 
 const experiencia = [
     {
-        imagen: "./assets/img/LaunchX1.png",
+        imagenPhone: "./assets/img/CodificadorIphone.png",
+        imagen: "./assets/img/Codificador.png",
         informacion: "Creado con JavaScript y React",
         titulo: "TinderFlix",
         github: "https:/",
