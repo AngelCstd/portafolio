@@ -317,6 +317,13 @@ section.experiencia {
 .experiencia__titulo{
     font-size: 1.8rem;
 }
+.experiencia__container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
 .experiencia__box{
     display: flex;
     flex-wrap: wrap;
