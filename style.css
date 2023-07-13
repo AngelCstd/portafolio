@@ -145,7 +145,7 @@ section.about {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    background-color: rgb(190, 220, 245);
+    background-color: #cee2f3;
 }
 
 .about__parrafo {
@@ -162,7 +162,7 @@ section.skills {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: rgb(244, 248, 252);
+    background-color: #f4f8fc;
     text-align: center;
 }
 
@@ -255,22 +255,26 @@ section.hobbies {
     background-color: rgb(244, 248, 252);
     text-align: center;
 }
-.hobbies__titulo{
+
+.hobbies__titulo {
     font-size: 1.8rem;
 }
-.hobbies__container{
+
+.hobbies__container {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: space-around;
     row-gap: 2rem;
 }
-.hobbies__box{
-    background-color: aquamarine;
+
+.hobbies__box {
+    background-color: #cee2f3;
     width: 35%;
     border: 1px solid black;
 }
-.hobbies__img img{
+
+.hobbies__img img {
     width: 70%;
 }
 
@@ -283,22 +287,27 @@ section.academico {
     background-color: rgb(244, 248, 252);
     text-align: center;
 }
-.academico__titulo{
+
+.academico__titulo {
     font-size: 1.8rem;
 }
-.academico__cursos{
+
+.academico__cursos {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
 }
-.academico__box{
+
+.academico__box {
     width: 100%;
     padding: 1rem;
 }
-.academico__box img{
+
+.academico__box img {
     width: 100%;
 }
-.academico__box h4{
+
+.academico__box h4 {
     font-size: 1.2rem;
     margin: 1rem;
 }
@@ -306,7 +315,7 @@ section.academico {
 /* experiencia*/
 
 section.experiencia {
-    padding:.7rem;
+    padding: .7rem;
     padding-top: 60px;
     display: flex;
     flex-direction: column;
@@ -314,34 +323,103 @@ section.experiencia {
     background-color: rgb(244, 248, 252);
     text-align: center;
 }
-.experiencia__titulo{
+
+.experiencia__titulo {
     font-size: 1.8rem;
 }
-.experiencia__container{
+
+.experiencia__container {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: .5rem;
     justify-content: space-around;
     row-gap: 2rem;
 }
-.experiencia__box{
+
+.experiencia__box {
     display: flex;
     flex-wrap: wrap;
-
-}
-.experiencia__imagenes{
-    display: flex;
     width: 100%;
-    height: 9rem;
-    justify-content: space-between;
 }
-.experiencia__imagenes img{
+
+.experiencia__imagenes {
+    position: relative;
+    width: 100%;
+    height: 80vw;
+}
+
+.experiencia__imagenes img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.experiencia__imgphone {
+    animation: cambioOpacidadPhone 16s infinite;
     height: 100%;
     width: auto;
 }
-.experiencia__info{
+.experiencia__img{
     width: 100%;
+    animation: cambioOpacidad 16s infinite;
 }
+
+@keyframes cambioOpacidad {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes cambioOpacidadPhone {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.experiencia__info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.experiencia__descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+}
+.experiencia__descripcion button{
+    padding: .7rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.422);
+    background-color: #cee2f3;
+}
+
+
 
 /*Contacto*/
 section.formcontacto {
@@ -351,15 +429,18 @@ section.formcontacto {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: #cee2f3;
 }
-.formcontacto__titulo{
+
+.formcontacto__titulo {
     font-size: 1.8rem;
 }
-.formcontacto__subtitulo{
+
+.formcontacto__subtitulo {
     font-size: 1rem;
 }
-.formcontacto__form{
+
+.formcontacto__form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -368,26 +449,30 @@ section.formcontacto {
     border: 1px solid rgba(0, 0, 0, 0.349);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.292);
 }
-.formcontacto :where(input, textarea){
+
+.formcontacto :where(input, textarea) {
     padding: .8rem .5rem;
     border: none;
     border-radius: 10px;
     border: 1px solid #0000005b;
 }
-.error{
+
+.error {
     border-color: #cc0033;
 }
-.customError{
+
+.customError {
     font-size: 15px;
     align-self: flex-start;
     color: #cc0033;
     margin: .3rem 0 1rem 0;
 }
-.formcontacto__boton{
+
+.formcontacto__boton {
     padding: 1rem;
     border: none;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: #b0d8fb;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.272);
 }
 
