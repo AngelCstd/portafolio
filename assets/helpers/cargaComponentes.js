@@ -6,27 +6,11 @@ const experiencia = [
     {
         imagenPhone: "./assets/img/CodificadorIphone.png",
         imagen: "./assets/img/Codificador.png",
-        informacion: "Creado con JavaScript y React",
-        titulo: "TinderFlix",
-        github: "https:/",
-        proyecto: "https:/",
+        informacion: "Creado con JavaScript, HTML y CSS",
+        titulo: "Codificador Alura",
+        github: "https://github.com/AngelCstd/codificador",
+        proyecto: "https://angelcstd.github.io/codificador/",
     },
-    {
-        imagenPhone: "./assets/img/CodificadorIphone.png",
-        imagen: "./assets/img/Codificador.png",
-        informacion: "Creado con JavaScript y React",
-        titulo: "TinderFlix",
-        github: "https:/",
-        proyecto: "https:/",
-    },
-    {
-        imagenPhone: "./assets/img/CodificadorIphone.png",
-        imagen: "./assets/img/Codificador.png",
-        informacion: "Creado con JavaScript y React",
-        titulo: "TinderFlix",
-        github: "https:/",
-        proyecto: "https:/",
-    }
 ];
 const formacion = [
     {

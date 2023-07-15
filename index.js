@@ -40,7 +40,7 @@ const handlerProgress = () => {
     let child = document.querySelector(".progress_container h4"),
         divs = document.querySelectorAll(".progress");
     progressContainer.removeChild(child);
-    progressContainer.style.height = "10rem";
+    progressContainer.style.height = "11rem";
     divs.forEach((div, index) => {
         div.style.width = porcents[index] + "%";
     });
