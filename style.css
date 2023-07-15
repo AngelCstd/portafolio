@@ -506,6 +506,7 @@ section.footer {
         display: flex;
         position: static;
         width: 100%;
+        max-width: 600px;
         height: auto;
         gap: 1.5rem;
         flex-direction: row;
@@ -555,13 +556,50 @@ section.footer {
 @media (width > 768px) {
 
     /*Menu*/
-
+    section.menu nav{
+        
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+    section.menu ul {
+        justify-content: space-between;
+        max-width: 550px;
+    }
     /*Titulo*/
-
+    section.hero{
+        gap: 10vw;
+    }
+    .hero__container{
+        max-width: 450px;
+    }
     /*Sección sobre mi*/
-
+    section.about{
+        padding: 2rem  4rem;
+    }
     /*Skills*/
-
+    section.skills {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    h3.skills__titulo {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    div.skills__container {
+        width: 45%;
+        gap: 1rem;
+    }
+    .progress_container {
+        width: 45%;
+    }
+    div.skills__box {
+        width: 20%;
+        max-width: 100px;
+    }
     /*Hobbies*/
 
     /*Formación Académica*/
