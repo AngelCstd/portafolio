@@ -312,16 +312,14 @@ section.academico {
 
 section.experiencia {
     padding: .7rem;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    margin-top: 60px;
     background-color: rgb(244, 248, 252);
     text-align: center;
 }
 
 .experiencia__titulo {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .experiencia__container {
@@ -336,12 +334,17 @@ section.experiencia {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
 }
 
 .experiencia__imagenes {
     position: relative;
     width: 100%;
+    max-width: 300px;
     height: 80vw;
+    max-height: 300px;
 }
 
 .experiencia__imagenes img {
@@ -396,10 +399,13 @@ section.experiencia {
 }
 .experiencia__info {
     width: 100%;
+    max-width: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     gap: 1rem;
+    max-height: 300px;
 }
 .experiencia__descripcion{
     width: 100%;
@@ -419,11 +425,12 @@ section.experiencia {
 
 /*Contacto*/
 section.formcontacto {
-    padding-top: 60px;
-    padding: 60px 1rem;
+    margin-top: 60px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.5rem;
     text-align: center;
     background-color: #cee2f3;
 }
@@ -439,6 +446,7 @@ section.formcontacto {
 .formcontacto__form {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
     padding: 1rem;
     border-radius: 5px;
     background-color: aliceblue;
@@ -534,7 +542,13 @@ section.footer {
         margin-top: 130px;
     }
     /*Experiencia Profesional*/
-
+    section.experiencia{
+        margin-top: 130px;
+    }
+    section.formcontacto{
+        margin-top: 130px;
+    }
+    
 }
 
 /*computadora*/
@@ -556,6 +570,5 @@ section.footer {
 
     /*Contacto*/
 
-    /*Footer*/
-
+    /*Foot*/
 }
