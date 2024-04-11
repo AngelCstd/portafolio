@@ -1,8 +1,8 @@
 section.resume {
     position: relative;
-    top: -5rem;
+    top: -4rem;
     background-color: var(--color-azul);
-    padding: 2rem 1rem;
+    padding: 7rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     color: var(--color-blanco);
@@ -15,7 +15,8 @@ section.resume >h1 {
     font-size: 5rem;
     color: transparent;
     -webkit-text-stroke: 1px var(--color-blanco);
-    position: relative;
+    position: absolute;
+    top: -2rem;
     right: -3rem;
     z-index: 0;
 }
