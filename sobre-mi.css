@@ -1,0 +1,358 @@
+/*Mobile - Sobre mi*/
+main.sobremi {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.sobremi__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.sobremi__titulo {
+    font-size: 2.5rem;
+}
+.sobremi__cv {
+    padding: .7rem 2rem;
+    border-radius: 18px;
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.426);
+}
+.sobremi__cv:hover {
+    box-shadow: none;
+}
+/*Tablet Vertical - Sobre mi*/
+@media (width > 540px) {
+    main.sobremi {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .sobremi__container {
+        width: 60vw;
+        max-width: 500px;
+    }
+}
+/*PC - Sobre mi*/
+@media (width > 768px) {
+    main.sobremi {
+        padding-top: 4.5rem;
+    }
+}
+/*------------------------------------------------------------------*/
+/*Mobile - Article Sobre mi*/
+.article__sobremi {
+    align-self: center;
+    background-color: var(--color-azul);
+    position: relative;
+    width: 80vw;
+    height: 88vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: -2rem;
+    z-index: 1;
+}
+.article__sobremi::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    background-color: var(--color-blanco);
+}
+.article__imagen--sobremi {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.article__container--sobremi {
+    background-color: #000;
+    color: var(--color-blanco);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    align-items: center;
+}
+.article__info--sobremi {
+    font-size: 10px;
+}
+/*Tablet Vertical - Article Sobre mi*/
+@media (width > 540px) {
+    .article__sobremi {
+        width: 32vw;
+        height: 40vw;
+        max-width: 240px;
+        max-height: 300px;
+        bottom: -5rem;
+    }
+    .article__sobremi::before {
+        width: 15vw;
+        max-width: 150px;
+        height: 15vw;
+        max-height: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/* Section skills */
+section.skills {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f4f8fc;
+    text-align: center;
+}
+
+h3.skills__titulo {
+    font-size: 1.8rem;
+}
+
+div.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+div.skills__box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-width: 120px;
+}
+
+li.skills__img img {
+    width: 100%;
+}
+
+.progress_container {
+    width: 90%;
+    max-width: 500px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+    height: 6rem;
+    transition: height .5s ease;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.progress_porcent {
+    width: 100%;
+    display: flex;
+    height: 6rem;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.porcent__box {
+    font-size: .9rem;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    height: 2.1rem;
+}
+
+.progress_bar {
+    width: 90%;
+    height: 10px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    transition: width 1s ease;
+}
+
+.color__box {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.skills__box img {
+    width: 70%;
+}
+
+/*Sección Hobbies*/
+section.hobbies {
+    padding-top: 3rem;
+    background-color: rgb(244, 248, 252);
+    text-align: center;
+}
+
+.hobbies__titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.hobbies__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    row-gap: 2rem;
+    column-gap: 1rem;
+}
+
+.hobbies__box {
+    background-color: #cee2f3;
+    width: 35%;
+    max-width: 120px;
+    border: 1px solid black;
+}
+
+.hobbies__img img {
+    width: 70%;
+}
+
+/* Experiencia Académica*/
+section.academico {
+    margin-top: 60px;
+    background-color: rgb(244, 248, 252);
+    text-align: center;
+}
+
+.academico__titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.academico__cursos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+
+.academico__box {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.academico__box img {
+    width: 100%;
+}
+
+.academico__box h4 {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+/* experiencia*/
+
+section.experiencia {
+    padding: .7rem;
+    margin-top: 60px;
+    background-color: rgb(244, 248, 252);
+    text-align: center;
+}
+
+.experiencia__titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.experiencia__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+.experiencia__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+}
+
+.experiencia__imagenes {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 80vw;
+    max-height: 300px;
+}
+
+.experiencia__imagenes img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.experiencia__imgphone {
+    animation: cambioOpacidadPhone 16s infinite;
+    height: 100%;
+    width: auto;
+}
+.experiencia__img{
+    width: 100%;
+    animation: cambioOpacidad 16s infinite;
+}
+
+
+.experiencia__info {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    max-height: 300px;
+}
+.experiencia__descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+}
+.experiencia__descripcion button{
+    padding: .7rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.422);
+    background-color: #cee2f3;
+}
+
+

@@ -1,229 +1,79 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AngelCstd</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body>
-    <!-- Sección del menu -->
-    <section class="menu">
-      <header class="menu__header">
-        <nav class="menu__nav">
-          <a class="menu__nombre" href="#home"
-            ><img
-              src="./assets/img/Icons/token.svg"
-              alt="logo"
-              class="menu__logo"
-            />AngelCstd</a
-          >
-          <ul class="menu__ul" id="menu">
-            <li class="menu__li">
-              <a class="menu__a" href="#home">Home</a>
-            </li>
-            <li class="menu__li">
-              <a class="menu__a" href="#sobremi">Sobre mi</a>
-            </li>
-            <li class="menu__li">
-              <a class="menu__a" href="#skills">Skills</a>
-            </li>
-            <li class="menu__li">
-              <a class="menu__a" href="#formacion">Formación</a>
-            </li>
-            <li class="menu__li">
-              <a class="menu__a" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="menu__li">
-              <a class="menu__a" href="#contacto">Contacto</a>
-            </li>
-            <a  class="icon__menu" href="#close"
-              ><img
-                src="./assets/img/Icons/close.svg"
-                alt="logo"
-                class="menu__logo"
-            /></a>
-          </ul>
-          <a class="icon__menu" href="#menu"
-            ><img
-              src="./assets/img/Icons/menu.svg"
-              alt="logo"
-              class="menu__logo"
-              id="menu"
-          /></a>
-        </nav>
-      </header>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - AngelCstd</title>
+  <link rel="stylesheet" href="./normalizacion-css.css" />
+  <link rel="stylesheet" href="./BarraDeNavegacion.css" />
+  <link rel="stylesheet" href="./inicio.css" />
+</head>
 
-    <section class="hero" id="home">
-      <div class="hero__container">
-        <h2 class="hero__bio">¡Hola, mi nombre es Angel Castañeda!</h2>
-        <h3 class="hero__bio--info">
-          Soy desarrollador FrontEnd, eterno autodidacta, apasionado por la
-          usabilidad y la interactividad.
-        </h3>
-        <ul class="hero__network">
-          <li class="hero__network_item">
-            <a href="https://github.com/AngelCstd">Github <img src="" /> </a>
-          </li>
-          <li class="hero__network_item">
-            <a href="https://www.linkedin.com/in/angelcstd/"
-              >Linkedin <img src=""
-            /></a>
-          </li>
-          <li class="hero__network_item">
-            <a href="https://instagram.com/angelcstd"
-              >Instagram <img src=""
-            /></a>
-          </li>
-          <li class="hero__network_item">
-            <a href="./assets/CV_Angel_Castaneda.pdf" target="_blank"
-              >CV<img src=""
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <img class="hero__perfil" src="./assets/img/aboutMe.jfif" />
-    </section>
+<body>
 
-    <!-- Sección sobre mi -->
-    <div id="sobremi"></div>
-    <section class="about" id="sobremi">
-      <h3 class="about__titulo">Sobre mi</h3>
-      <p class="about__parrafo">
-        ¡Hola! Soy Angel Castañeda joven de 22 años orgullosamente mexicano,
-        tambien soy un desarrollador frontend autodidacta. Durante un año, he
-        estado explorando y aprendiendo por mi cuenta, respaldado por cursos y
-        proyectos personales que he construido. Me siento cómodo trabajando
-        tanto en proyectos individuales como en equipos colaborativos.
-      </p>
-      <p class="about__parrafo">
-        Me enorgullece haber creado un menú electrónico y una funcionalidad de
-        compra conectada a una base de datos para una tienda de comida. Siempre
-        me mantengo actualizado en las últimas tendencias del desarrollo
-        frontend, siguiendo a expertos y participando en la implementación de
-        nuevas funcionalidades. Además, tengo habilidades para manejar el estrés
-        y una gran disposición para trabajar en equipo y aprender de mis
-        compañeros. ¡Estoy emocionado de seguir creciendo y creando experiencias
-        únicas en el mundo del desarrollo frontend!
-      </p>
-    </section>
+  <!-- Barra de navegacion -->
+  <header class="menu__header">
+    <nav class="menu__nav">
+      <a class="menu__nombre" href="./index.html">
+        <img src="./assets/img/Icons/token.svg" alt="logo angel cstd" class="menu__logo" />
+        AngelCstd
+      </a>
+      <ul class="menu__ul" id="menu">
+        <li class="menu__li">
+          <a class="menu__a" href="./index.html">Inicio</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__a" href="./sobre-mi.html">Sobre mi</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__a" href="./proyectos.html">Proyectos</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__a" href="./contacto.html">Contacto</a>
+        </li>
+        <a class="icon__menu" href="#close">
+          <img src="./assets/img/Icons/close.svg" alt="cerrar menu" class="menu__logo" />
+        </a>
+      </ul>
+      <a class="icon__menu" href="#menu">
+        <img src="./assets/img/Icons/menu.svg" alt="menu" class="menu__logo" id="menu" />
+      </a>
+    </nav>
+  </header>
+  <!-- Fin Barra de navegación -->
 
-    <!-- Sección de Skills -->
-    <div id="skills"></div>
-    <section class="skills" >
-      <h3 class="skills__titulo">Skills</h3>
-      <div class="progress_container">
-        <h3>¿Quieres ver mis estadisticas en Git Hub?</h3>
-        <h4>¡Prueba dandome click!</h4>
-        <div class="progress_bar"></div>
-        <div class="progress_porcent"></div>
-      </div>
-      <div class="skills__container"></div>
-    </section>
-
-    <!-- Sección de Hobbies -->
-    <section class="hobbies">
-      <h3 class="hobbies__titulo">Hobbies</h3>
-      <div class="hobbies__container">
-        <div class="hobbies__box">
-            <figure class="hobbies__img">
-              <img src="./assets/img/Icons/book.svg" />
-              <figcaption class="hobbies__name">Leer</figcaption>
-            </figure>
-        </div>
-        <div class="hobbies__box">
-            <figure class="hobbies__img">
-              <img src="./assets/img/Icons/control.svg"/>
-              <figcaption class="hobbies__name">Video juegos</figcaption>
-            </figure>
-        </div>
-        <div class="hobbies__box">
-            <figure class="hobbies__img">
-              <img src="./assets/img/Icons/cooking.svg" />
-              <figcaption class="hobbies__name">Cocinar</figcaption>
-            </figure>
-        </div>
-        <div class="hobbies__box">
-            <figure class="hobbies__img">
-              <img src="./assets/img/Icons/headphone.svg" />
-              <figcaption class="hobbies__name">Escuchar musica</figcaption>
-            </figure>
-        </div>
-      </div>
-      <div>aqui va lo de spotify</div>
-    </section>
-
-    <!-- Sección de Formación académica -->
-    <div id="formacion"></div>
-    <section class="academico" >
-      <h2 class="academico__titulo">Formación</h2>
-      <div class="academico__cursos"></div>
-    </section>
-
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <div id="proyectos"></div>
-    <section class="experiencia" >
-      <h2 class="experiencia__titulo">Experiencia</h2>
-      <div class="experiencia__container"></div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <div id="contacto"></div>
-    <section class="formcontacto" >
-      <h2 class="formcontacto__titulo">Contacto</h2>
-      <h3 class="formcontacto__subtitulo">
-        Complete el siguiente formulario y me pondré en contacto con usted lo
-        antes posible.
+  <!-- Inicio -->
+  <main class="hero" id="home">
+    <div class="hero__container">
+      <h2 class="hero__bio">Angel Castañeda Desarrollador Front End</h2>
+      <h3 class="hero__bio--info">
+        Soy estudiante de Ingenieria en computación, eterno autodidacta
       </h3>
-      <form class="formcontacto__form" name="form" id="form">
-        <input
-          class="formcontacto__input formcontacto"
-          type="text"
-          required
-          name="nombre"
-          placeholder="Nombre"
-          pattern="^.{1,50}$"
-        />
-        <span class="customError"></span>
-        <input
-          class="formcontacto__input formcontacto"
-          type="email"
-          required
-          name="email"
-          placeholder="E-mail"
-        />
-        <span class="customError"></span>
-        <input
-          class="formcontacto__input formcontacto"
-          type="text"
-          required
-          name="asunto"
-          placeholder="Asunto"
-          pattern="^.{1,50}$"
-        />
-        <span class="customError"></span>
-        <textarea
-          class="formcontacto__textarea formcontacto"
-          rows="3"
-          required
-          cols="40"
-          name="mensaje"
-          placeholder="Mensaje"
-        ></textarea>
-        <span class="customError"></span>
-        <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
-      </form>
-    </section>
+      <ul class="hero__network">
+        <li class="hero__network_item">
+          <a href="https://github.com/AngelCstd">
+            <img src="./assets/img/Icons/github.svg" alt="GitHub" class="hero__redes"/>
+          </a>
+        </li>
+        <li class="hero__network_item">
+          <a href="https://www.linkedin.com/in/angelcstd/">
+            <img src="./assets/img/Icons/linkedin.svg" alt="LinkedIn" class="hero__redes"/>
+          </a>
+        </li>
+        <li class="hero__network_item">
+          <a href="https://instagram.com/angelcstd">
+            <img src="./assets/img/Icons/instagram.svg" alt="Instagram" class="hero__redes"/>
+          </a>
+        </li>
+      </ul>
+      <a href="./sobre-mi.html" class="hero__boton">Mas información</a>
+    </div>
+    <img class="hero__perfil" src="./assets/img/aboutMe.jfif" />
+  </main>
+  <!-- Fin inicio -->
 
-    <!-- Sección de Footer -->
-    <section class="footer">
-      <div class="footer__rodapie">
-        <p>Desarrollado por Angel Castañeda</p>
-        <p>2023</p>
-      </div>
-    </section>
-    <script type="module" src="./index.js"></script>
-  </body>
+
+</body>
+
 </html>

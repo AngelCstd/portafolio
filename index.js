@@ -1,4 +1,4 @@
-import { valida } from "./assets/helpers/validaciones.js";
+//import { valida } from "./assets/helpers/validaciones.js";
 import { creacionDiv } from "./assets/helpers/peticiones.js";
 import {
     experienciaHTML,
@@ -7,7 +7,7 @@ import {
 } from "./assets/helpers/cargaComponentes.js";
 
 // Validaciones
-const formulario = document.querySelector("#form"),
+/*const formulario = document.querySelector("#form"),
     inputs = document.querySelectorAll("#form input"),
     textArea = document.querySelector("#form textarea");
 
@@ -22,7 +22,7 @@ textArea.addEventListener("blur", ({ target }) => {
 inputs.forEach((input) => {
     input.addEventListener("blur", valida);
 });
-
+*/
 // Componentes
 let experiencia = document.querySelector("div.experiencia__container"),
     formacion = document.querySelector("div.academico__cursos"),

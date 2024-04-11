@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Sección de Contacto -->
+  <div id="contacto"></div>
+  <section class="formcontacto">
+    <h2 class="formcontacto__titulo">Contacto</h2>
+    <h3 class="formcontacto__subtitulo">
+      Complete el siguiente formulario y me pondré en contacto con usted lo
+      antes posible.
+    </h3>
+    <form class="formcontacto__form" name="form" id="form">
+      <input class="formcontacto__input formcontacto" type="text" required name="nombre" placeholder="Nombre"
+        pattern="^.{1,50}$" />
+      <span class="customError"></span>
+      <input class="formcontacto__input formcontacto" type="email" required name="email" placeholder="E-mail" />
+      <span class="customError"></span>
+      <input class="formcontacto__input formcontacto" type="text" required name="asunto" placeholder="Asunto"
+        pattern="^.{1,50}$" />
+      <span class="customError"></span>
+      <textarea class="formcontacto__textarea formcontacto" rows="3" required cols="40" name="mensaje"
+        placeholder="Mensaje"></textarea>
+      <span class="customError"></span>
+      <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- Sección de Footer -->
+  <section class="footer">
+    <div class="footer__rodapie">
+      <p>Desarrollado por Angel Castañeda</p>
+      <p>2023</p>
+    </div>
+  </section>
+</body>
+</html>
