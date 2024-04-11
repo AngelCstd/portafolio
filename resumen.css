@@ -11,7 +11,7 @@ section.resume {
 }
 section.resume >h1 {
     align-self: flex-end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     color: transparent;
     -webkit-text-stroke: 1px var(--color-blanco);
@@ -67,7 +67,7 @@ section.resume > h1::after {
     width: 10px; 
     height: 10px; 
     background-color: var(--color-naranja); 
-    border-radius: 50%; /* Hace el punto redondo */
+    border-radius: 50%;
 }
 .resume__item:last-child::before {
     display: none;
