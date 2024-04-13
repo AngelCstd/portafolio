@@ -1,11 +1,13 @@
+/*Mobile - Resume*/
 section.resume {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
     position: relative;
     top: -4rem;
-    background-color: var(--color-azul);
-    padding: 7rem .5rem 1rem;
     display: flex;
     flex-direction: column;
-    color: var(--color-blanco);
+    gap: 1.5rem;
+    padding: 8rem .5rem 1rem;
     overflow: hidden;
     height: auto;
 }
@@ -37,20 +39,29 @@ section.resume > h1::before{
         right: -1rem;
     }
 }
+/*PC - Resumen*/
+@media (width > 765px) {
+    section.resume {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 /*Pantallas grandes - Resumen*/
 @media (width > 900px) {
+    section.resume {
+        padding: 3rem 3rem 1rem;
+    }
     section.resume > h1 {
         top: -2rem;
         right: 2rem;
     }
 }
-
-/* Lista Aprendizaje */
-.resume__container {
-    max-width: 430px;
-    padding: 1rem;
+/*************************************************************************/
+/*Mobile - Listas */
+.resume__container--lista {
+    padding: .5rem;
 }
-.resume__container > h2 {
+.resume__container--lista > h2 {
     color: var(--color-amarillo);
     font-size: 1.7rem;
     margin-bottom: 1rem;
@@ -70,9 +81,9 @@ section.resume > h1::before{
     content: ''; 
     position: absolute;
     left: 1rem; 
-    top: calc(50% + 2px); 
+    top: calc(50%); 
     width: 1px; 
-    height: calc(100% + 1rem);
+    height: calc(100% + 1.2rem);
     background-color: var(--color-blanco); 
 }
 .resume__item::after{
@@ -93,40 +104,25 @@ section.resume > h1::before{
 }
 .resume__subcontainer {
     font-size: 16px;
-    margin-bottom: .5rem;
 }
 .resume__aprendizaje {
+    margin-top: 5px;
     font-size: 12px;
 }
-/* Lista Experiencia */
 .resume__aprendizaje--experiencia{
     background-color: var(--color-amarillo);
     color: #000;
-    margin-left: 2rem;
+    margin-left: -1rem;
 }
 .resume__aprendizaje--experiencia > h2 {
     color: #000;
 }
 .resume__aprendizaje--experiencia .resume__item::after{
     content: ''; 
-    position: absolute;
-    left: calc(1rem - 4.5px); 
-    top: 50%; 
-    width: 10px; 
-    height: 10px; 
     background-color: var(--color-azul); 
-    border-radius: 50%;
+
 }
-.resume__aprendizaje--experiencia .resume__item::before{
-    content: ''; 
-    position: absolute;
-    left: 1rem; 
-    top: calc(50% + 2px); 
-    width: 1px; 
-    height: calc(100% + 1.5rem);
-    background-color: var(--color-blanco); 
-}
-/*Tablet Vertical - Resumen*/
+/*Tablet Vertical - Listas*/
 @media (width > 540px) {
     .resume__item {
         flex-direction: row;
@@ -135,17 +131,71 @@ section.resume > h1::before{
         align-items: center;
     }
     .resume__subcontainer {
-        width: 65%;
+        width: 70%;
     }
 }
+/*PC - Listas*/
 @media (width > 765px) {
-    .resume__container {
-        max-width: 400px;
-    }
-    .resume__aprendizaje--experiencia{
-        margin-left: 0;
+    .resume__item {
+        flex-direction: column;
+        gap: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .resume__ano {
         font-size: 18px;
+    }
+    .resume__subcontainer {
+        width: 100%;
+    }
+    .resume__container {
+        width: 50%;
+        max-width: 500px;
+    }
+}
+/*Mobile - Habilidades*/
+.resume__habilidades >h2 {
+    color: var(--color-amarillo);
+    margin: .5rem;
+}
+.resume_habilidades__list {
+    margin-top: 1rem;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem 2rem;
+    padding: 1rem;
+}
+.resume_habilidades__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resume_habilidades__item img{
+    width: 60px;
+}
+.resume_habilidades__item img:hover{
+    transform: scale(90%);
+    filter: brightness(80%);
+    transition: all .2s ease;
+}
+.resume_habilidades__item p{
+    font-size: 12px;
+}
+@media (width > 540px) {
+    .resume_habilidades__list {
+        padding: 2rem;
+        gap: 1rem 3.5rem;
+    }
+}
+/*PC - Habilidades*/
+@media (width > 765px) {
+    .resume_habilidades__list {
+        padding: 1rem;
+        gap: 1rem 2rem;
+    }
+    .resume__habilidades {
+        margin-top: 5rem;
     }
 }

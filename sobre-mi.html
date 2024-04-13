@@ -72,9 +72,9 @@
   <!-- Sección Resumen -->
   <section class="resume">
     <h1>RESUMEN</h1>
-    <div class="resume__aprendizaje"> 
+    <div class="resume__aprendizaje resume__container"> 
       <!--Componente Lista Aprendizaje 1-->
-      <div class="resume__aprendizaje--educacion  resume__container">
+      <div class="resume__aprendizaje--educacion  resume__container--lista">
         <h2>Educación</h2>
         <ul class="resume__lista">
           <li class="resume__item">
@@ -102,7 +102,7 @@
       </div>
       <!--Fin Componente Lista Aprendizaje 1-->
       <!--Componente Lista Aprendizaje 2-->
-      <div class="resume__aprendizaje--experiencia  resume__container">
+      <div class="resume__aprendizaje--experiencia  resume__container--lista">
         <h2>Experiencia</h2>
         <ul class="resume__lista">
           <li class="resume__item">
@@ -123,71 +123,69 @@
       </div>
       <!--Fin Componente Lista Aprendizaje 2-->
     </div>
-    <div class="resume__habilidades">
-
+    <!--Componente habilidades-->
+    <div class="resume__habilidades resume__container">
+      <h2>Habilidades tecnicas</h2>
+        <ul class="resume_habilidades__list">
+          <li class="resume_habilidades__item">
+            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS">
+          </a>
+          <p>CSS</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML">
+          </a>
+          <p>HTML</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+          </a>
+          <p>JavaScript</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React">
+          </a>
+          <p>React</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="GIT">
+          </a>
+          <p>GIT</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma">
+          </a>
+          <p>Figma</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS">
+          </a>
+          <p>NodeJS</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL">
+          </a>
+          <p>MySQL</p>
+          </li>
+          <li class="resume_habilidades__item">
+            <a href="https://www.java.com" target="_blank" rel="noreferrer">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java">
+          </a>
+          <p>Java</p>
+          </li>
+        </ul>
     </div>
+    <!--Fin Componente habilidades-->
   </section>
   <!-- Fin Sección Resumen -->
-
-  <!--                            -->
-  <hr>
-  <div id="skills"></div>
-  <section class="skills">
-    <h3 class="skills__titulo">Skills</h3>
-    <div class="progress_container">
-      <h3>¿Quieres ver mis estadisticas en Git Hub?</h3>
-      <h4>¡Prueba dandome click!</h4>
-      <div class="progress_bar"></div>
-      <div class="progress_porcent"></div>
-    </div>
-    <div class="skills__container"></div>
-  </section>
-
-  <!-- Sección de Hobbies -->
-  <section class="hobbies">
-    <h3 class="hobbies__titulo">Hobbies</h3>
-    <div class="hobbies__container">
-      <div class="hobbies__box">
-        <figure class="hobbies__img">
-          <img src="./assets/img/Icons/book.svg" />
-          <figcaption class="hobbies__name">Leer</figcaption>
-        </figure>
-      </div>
-      <div class="hobbies__box">
-        <figure class="hobbies__img">
-          <img src="./assets/img/Icons/control.svg" />
-          <figcaption class="hobbies__name">Video juegos</figcaption>
-        </figure>
-      </div>
-      <div class="hobbies__box">
-        <figure class="hobbies__img">
-          <img src="./assets/img/Icons/cooking.svg" />
-          <figcaption class="hobbies__name">Cocinar</figcaption>
-        </figure>
-      </div>
-      <div class="hobbies__box">
-        <figure class="hobbies__img">
-          <img src="./assets/img/Icons/headphone.svg" />
-          <figcaption class="hobbies__name">Escuchar musica</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div>aqui va lo de spotify</div>
-  </section>
-
-  <!-- Sección de Formación académica -->
-  <div id="formacion"></div>
-  <section class="academico">
-    <h2 class="academico__titulo">Formación</h2>
-    <div class="academico__cursos"></div>
-  </section>
-
-  <!-- Sección de Experiencia Profesional/Proyectos-->
-  <div id="proyectos"></div>
-  <section class="experiencia">
-    <h2 class="experiencia__titulo">Experiencia</h2>
-    <div class="experiencia__container"></div>
-  </section>
   <script type="module" src="./index.js"></script>
 </body>
 
