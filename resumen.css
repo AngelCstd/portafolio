@@ -1,12 +1,11 @@
 /*Mobile - Resume*/
 section.resume {
-    background-color: var(--color-azul);
+    background: var(--color-azul);
     color: var(--color-blanco);
     position: relative;
-    top: -4rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 8rem .5rem 1rem;
     overflow: hidden;
     height: auto;
@@ -31,7 +30,6 @@ section.resume > h1::before{
 /*Tablet Vertical - Resumen*/
 @media (width > 540px) {
     section.resume {
-        top: 0;
         padding: 3rem 1rem 1rem;
     }
     section.resume > h1 {
@@ -60,6 +58,7 @@ section.resume > h1::before{
 /*Mobile - Listas */
 .resume__container--lista {
     padding: .5rem;
+    margin: .5rem;
 }
 .resume__container--lista > h2 {
     color: var(--color-amarillo);
@@ -105,7 +104,7 @@ section.resume > h1::before{
 .resume__subcontainer {
     font-size: 16px;
 }
-.resume__aprendizaje {
+.resume__aprendizajeobtenido {
     margin-top: 5px;
     font-size: 12px;
 }

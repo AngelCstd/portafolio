@@ -52,7 +52,7 @@ main.sobremi {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    bottom: -2rem;
+    bottom: -4.5rem;
     z-index: 1;
 }
 .article__sobremi::before {

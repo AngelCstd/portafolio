@@ -47,7 +47,7 @@ main.hero {
 }
 
 
-/*Tablet*/
+/*Tablet - Inicio*/
 @media (width > 425px) {
     main.hero {
         height: calc(100vh - 100px);
@@ -66,7 +66,7 @@ main.hero {
     }
 }
 
-/*computadora*/
+/*PC - Inicio*/
 @media (width > 768px) {
 
     /*Titulo*/
@@ -76,33 +76,5 @@ main.hero {
 
     .hero__container {
         max-width: 450px;
-    }
-
-    /*Skills---------------------------------------------------------*/
-    section.skills {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-    h3.skills__titulo {
-        font-size: 1.8rem;
-        width: 100%;
-    }
-
-    div.skills__container {
-        width: 45%;
-        gap: 1rem;
-    }
-
-    .progress_container {
-        width: 45%;
-    }
-
-    div.skills__box {
-        width: 20%;
-        max-width: 100px;
     }
 }
