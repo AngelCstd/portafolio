@@ -2,7 +2,7 @@ section.resume {
     position: relative;
     top: -4rem;
     background-color: var(--color-azul);
-    padding: 7rem 1rem 1rem;
+    padding: 7rem .5rem 1rem;
     display: flex;
     flex-direction: column;
     color: var(--color-blanco);
@@ -10,7 +10,6 @@ section.resume {
     height: auto;
 }
 section.resume >h1 {
-    align-self: flex-end;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     color: transparent;
@@ -20,27 +19,43 @@ section.resume >h1 {
     right: -3rem;
     z-index: 0;
 }
-section.resume > h1::before, section.resume > h1::after{
+section.resume > h1::before{
     content: "RESUMEN";
     position: absolute;
     bottom: -4.3rem;
     left: 0;
     z-index: -1;
 }
-section.resume > h1::after {
-    top: -4.3rem;
+/*Tablet Vertical - Resumen*/
+@media (width > 540px) {
+    section.resume {
+        top: 0;
+        padding: 3rem 1rem 1rem;
+    }
+    section.resume > h1 {
+        top: -3rem;
+        right: -1rem;
+    }
 }
+/*Pantallas grandes - Resumen*/
+@media (width > 900px) {
+    section.resume > h1 {
+        top: -2rem;
+        right: 2rem;
+    }
+}
+
+/* Lista Aprendizaje */
 .resume__container {
-    position: relative;
-    z-index: 2;
+    max-width: 430px;
+    padding: 1rem;
 }
-.resume__container >h2 {
-    color: var(--color-naranja);
-    font-size: 1.6rem;
+.resume__container > h2 {
+    color: var(--color-amarillo);
+    font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 .resume__lista {
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -67,7 +82,7 @@ section.resume > h1::after {
     top: 50%; 
     width: 10px; 
     height: 10px; 
-    background-color: var(--color-naranja); 
+    background-color: var(--color-amarillo); 
     border-radius: 50%;
 }
 .resume__item:last-child::before {
@@ -83,14 +98,54 @@ section.resume > h1::after {
 .resume__aprendizaje {
     font-size: 12px;
 }
+/* Lista Experiencia */
+.resume__aprendizaje--experiencia{
+    background-color: var(--color-amarillo);
+    color: #000;
+    margin-left: 2rem;
+}
+.resume__aprendizaje--experiencia > h2 {
+    color: #000;
+}
+.resume__aprendizaje--experiencia .resume__item::after{
+    content: ''; 
+    position: absolute;
+    left: calc(1rem - 4.5px); 
+    top: 50%; 
+    width: 10px; 
+    height: 10px; 
+    background-color: var(--color-azul); 
+    border-radius: 50%;
+}
+.resume__aprendizaje--experiencia .resume__item::before{
+    content: ''; 
+    position: absolute;
+    left: 1rem; 
+    top: calc(50% + 2px); 
+    width: 1px; 
+    height: calc(100% + 1.5rem);
+    background-color: var(--color-blanco); 
+}
+/*Tablet Vertical - Resumen*/
 @media (width > 540px) {
-    section.resume {
-        top: 0;
-        padding: 3rem 2rem 1rem;
+    .resume__item {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
     }
-    section.resume > h1 {
-        position: absolute;
-        top: -3rem;
-        right: -1rem;
+    .resume__subcontainer {
+        width: 65%;
+    }
+}
+@media (width > 765px) {
+    .resume__container {
+        max-width: 400px;
+    }
+    .resume__aprendizaje--experiencia{
+        margin-left: 0;
+    }
+    .resume__ano {
+        font-size: 18px;
     }
 }
