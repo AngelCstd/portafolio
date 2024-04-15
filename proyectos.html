@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalizacion-css.css" />
+    <link rel="stylesheet" href="./styles/BarraDeNavegacion.css" />
+    <link rel="stylesheet" href="./styles/proyectos.css" />
+    <title>Proyectos - Angel Cstd</title>
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <header class="menu__header">
+        <nav class="menu__nav">
+            <a class="menu__nombre" href="./index.html">
+                <img src="../archivos/Icons/logo.svg" alt="logo angel cstd" class="menu__logo" />
+                AngelCstd
+            </a>
+            <ul class="menu__ul" id="menu">
+                <li class="menu__li">
+                    <a class="menu__a" href="./index.html">Inicio</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="./sobre-mi.html">Sobre mi</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="menu__li">
+                    <a class="menu__a" href="./contacto.html">Contacto</a>
+                </li>
+                <a class="icon__menu" href="#close">
+                    <img src="./archivos/Icons/close.svg" alt="cerrar menu" class="menu__logo" />
+                </a>
+            </ul>
+            <a class="icon__menu" href="#menu">
+                <img src="./archivos/Icons/menu.svg" alt="menu" class="menu__logo" id="menu" />
+            </a>
+        </nav>
+    </header>
+    <!-- Fin Barra de navegación -->
+
+    <!-- Componente Proyectos-->
+    <section class="proyectos">
+        <div class="container">
+            <h1 class="titulo">Codificador</h1>
+            <p class="explicacion">Esta aplicación fue creada con la finalidad de poner en practica mis habilidades con
+                algunas tecnologias como html, css y javascript, consiste en una aplicacion que al ingresar un mensaje
+                puedas codificarlo y si recibes un mensaje igual puedes descodificarlo</p>
+            <ul class="tecnologias__list">
+                <li class="tecnologias__item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                        alt="CSS">
+                    <p>CSS</p>
+                </li>
+                <li class="tecnologias__item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                        alt="HTML">
+                    <p>HTML</p>
+                </li>
+                <li class="tecnologias__item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <p>JavaScript</p>
+                </li>
+            </ul>
+            <div class="botones">
+                <a href="">Ir a repositorio</a>
+                <a href="">Ir a aplicacion</a>
+            </div>
+        </div>
+        <img src="archivos/img/CodificadorIphone.png" alt="Muestra de aplicacion en pantalla de telefono" class="pantallaMuestra">
+    </section>
+</body>
+
+</html>
