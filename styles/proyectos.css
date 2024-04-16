@@ -1,6 +1,6 @@
 /*Mobile - Proyectos*/
 .proyectos {
-    min-height: calc(100vh-65.2px);
+    min-height: 80vh;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 section.proyectos .container {
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,7 @@ section.proyectos .container>p{
 }
 .tecnologias__list {
     width: 100%;
+    max-width: 400px;
     align-self: center;
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +50,7 @@ section.proyectos .container>p{
 .botones {
     display: flex;
     width: 100%;
+    max-width: 400px;
     justify-content: space-around;
     gap: 1rem;
 }
@@ -57,7 +59,7 @@ section.proyectos .container>p{
     background-color: var(--color-azul);
     color: var(--color-blanco);
     border-radius: 20px;
-    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.448);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.588);
     transition: opacity .2s ease, transform .2s ease;
 }
 .botones a:last-child {
@@ -69,11 +71,30 @@ section.proyectos .container>p{
     opacity: 80%;
 }
 .pantallaMuestra {
-    max-height: 400px;
-    width: auto;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
 }
-@media (width > 540px) {
+.fondo__azul {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+}
+.fondo__azul .botones a:first-child {
+    background-color: var(--color-blanco);
+    color: var(--color-azul);
+}
+@media (width > 765px) {
+    .pantallaMuestra{
+        width: 50%;
+        max-width: 400px;
+    }
+    section.proyectos .container {
+        max-width: 500px;
+    }
     .proyectos {
         flex-direction: row;
+    }
+    .fondo__azul {
+        flex-direction: row-reverse;
     }
 }
