@@ -1,69 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalizacion-css.css" />
-    <link rel="stylesheet" href="./styles/BarraDeNavegacion.css" />
-    <link rel="stylesheet" href="./styles/contacto.css" />
-    <title>Contacto - AngelCstd</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalizacion-css.css" />
+  <link rel="stylesheet" href="./styles/BarraDeNavegacion.css" />
+  <link rel="stylesheet" href="./styles/contacto.css" />
+  <title>Contacto - AngelCstd</title>
 </head>
+
 <body>
   <!-- Barra de navegacion -->
   <header class="menu__header">
     <nav class="menu__nav">
-        <a class="menu__nombre" href="./index.html">
-            <img src="./archivos/Icons/logo.svg" alt="logo angel cstd" class="menu__logo" />
-            AngelCstd
+      <a class="menu__nombre" href="./index.html">
+        <img src="./archivos/Icons/logo.svg" alt="logo angel cstd" class="menu__logo" />
+        AngelCstd
+      </a>
+      <ul class="menu__ul" id="menu">
+        <li class="menu__li">
+          <a class="menu__a" href="./index.html">Inicio</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__a" href="./sobre-mi.html">Sobre mi</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__a" href="./proyectos.html">Proyectos</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__a" href="./contacto.html">Contacto</a>
+        </li>
+        <a class="icon__menu" href="#close">
+          <img src="./archivos/Icons/close.svg" alt="cerrar menu" class="menu__logo" />
         </a>
-        <ul class="menu__ul" id="menu">
-            <li class="menu__li">
-                <a class="menu__a" href="./index.html">Inicio</a>
-            </li>
-            <li class="menu__li">
-                <a class="menu__a" href="./sobre-mi.html">Sobre mi</a>
-            </li>
-            <li class="menu__li">
-                <a class="menu__a" href="./proyectos.html">Proyectos</a>
-            </li>
-            <li class="menu__li">
-                <a class="menu__a" href="./contacto.html">Contacto</a>
-            </li>
-            <a class="icon__menu" href="#close">
-                <img src="./archivos/Icons/close.svg" alt="cerrar menu" class="menu__logo" />
-            </a>
-        </ul>
-        <a class="icon__menu" href="#menu">
-            <img src="./archivos/Icons/menu.svg" alt="menu" class="menu__logo" id="menu" />
-        </a>
+      </ul>
+      <a class="icon__menu" href="#menu">
+        <img src="./archivos/Icons/menu.svg" alt="menu" class="menu__logo" id="menu" />
+      </a>
     </nav>
-</header>
-<!-- Fin Barra de navegación -->
-      <!-- Sección de Contacto -->
-  <div id="contacto"></div>
-  <section class="formcontacto">
-    <h2 class="formcontacto__titulo">Contacto</h2>
-    <h3 class="formcontacto__subtitulo">
+  </header>
+  <!-- Fin Barra de navegación -->
+  <!-- Sección de Contacto -->
+  <main class="formcontacto">
+    <h1 class="formcontacto__titulo">Contacto</h1>
+    <p class="formcontacto__indicaciones">
       Complete el siguiente formulario y me pondré en contacto con usted lo
       antes posible.
-    </h3>
+    </p>
     <form class="formcontacto__form" name="form" id="form">
-      <input class="formcontacto__input formcontacto" type="text" required name="nombre" placeholder="Nombre"
-        pattern="^.{1,50}$" />
-      <span class="customError"></span>
-      <input class="formcontacto__input formcontacto" type="email" required name="email" placeholder="E-mail" />
-      <span class="customError"></span>
-      <input class="formcontacto__input formcontacto" type="text" required name="asunto" placeholder="Asunto"
-        pattern="^.{1,50}$" />
-      <span class="customError"></span>
-      <textarea class="formcontacto__textarea formcontacto" rows="3" required cols="40" name="mensaje"
+
+      <label for="nombre">Nombre:</label>
+      <input class="formcontacto__input formcontacto" type="text" required name="nombre" id="nombre"
+        placeholder="Nombre" pattern="^.{1,50}$" />
+
+      <label for="email">E-mail:</label>
+      <input class="formcontacto__input formcontacto" type="email" required name="email" id="email"
+        placeholder="E-mail" />
+
+      <label for="asunto">Asunto:</label>
+      <input class="formcontacto__input formcontacto" type="text" required name="asunto" id="asunto"
+        placeholder="Asunto" pattern="^.{1,50}$" />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea class="formcontacto__textarea formcontacto" rows="3" required cols="40" name="mensaje" id="mensaje"
         placeholder="Mensaje"></textarea>
-      <span class="customError"></span>
+
+      <label class="formcontacto__label">¿Qué tipo de trabajo quieres que haga?</label>
+      <div>
+        <label for="empleado">
+          <input type="radio" id="empleado" name="trabajo" value="empleado">
+          Empleado
+        </label>
+        <label for="freelance">
+          <input type="radio" id="freelance" name="trabajo" value="freelance">
+          Freelance
+        </label>
+        <label for="consultoria">
+          <input type="radio" id="consultoria" name="trabajo" value="consultoria">
+          Consultoría
+        </label>
+      </div>
+      <label class="formcontacto__label">¿Sobre cual tema es el trabajo?</label>
+      <div>
+        <label for="Frontend">
+          <input type="checkbox" id="Frontend" name="tema" value="Frontend">
+          Frontend
+        </label>
+        <label for="Backend">
+          <input type="checkbox" id="Backend" name="tema" value="Backend">
+          Backend
+        </label>
+        <label for="DataBase">
+          <input type="checkbox" id="DataBase" name="tema" value="DataBase">
+          Bases de datos
+        </label>
+      </div>
       <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
     </form>
-  </section>
-
-  <!-- Sección de Footer -->
-
+  </main>
 </body>
+
 </html>

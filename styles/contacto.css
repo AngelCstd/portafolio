@@ -1,60 +1,64 @@
-
 /*Contacto*/
-section.formcontacto {
-    margin-top: 60px;
+main.formcontacto {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     text-align: center;
-    background-color: #cee2f3;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    min-height: calc(100vh - 65.2px);
 }
 
 .formcontacto__titulo {
     font-size: 1.8rem;
 }
 
-.formcontacto__subtitulo {
-    font-size: 1rem;
+.formcontacto__indicaciones {
+    font-size: 1.3rem;
 }
 
 .formcontacto__form {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 400px;
     padding: 1rem;
     border-radius: 5px;
-    background-color: aliceblue;
-    border: 1px solid rgba(0, 0, 0, 0.349);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.292);
+    background-color: var(--color-blanco);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.579);
+}
+
+label{
+    color: #000;
+    align-self: flex-start;
+    margin: .7rem 0 .3rem;
 }
 
 .formcontacto :where(input, textarea) {
-    padding: .8rem .5rem;
+    padding: .8rem .5rem .6rem;
     border: none;
     border-radius: 10px;
     border: 1px solid #0000005b;
 }
-
-.error {
-    border-color: #cc0033;
+.formcontacto__label{
+    align-self: center;
 }
-
-.customError {
-    font-size: 15px;
-    align-self: flex-start;
-    color: #cc0033;
-    margin: .3rem 0 1rem 0;
+.formcontacto div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .formcontacto__boton {
+    margin-top: 1rem;
     padding: 1rem;
     border: none;
     border-radius: 10px;
-    background-color: #b0d8fb;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.272);
 }
-
-/*footeer*/
-
