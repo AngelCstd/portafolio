@@ -34,7 +34,14 @@ main.hero {
 
 .hero__perfil {
     border-radius: 50%;
+    width: 80%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    align-self: center;
+    object-fit: cover;
 }
+
 .hero__redes {
     width: 30px;
 }
@@ -53,12 +60,6 @@ main.hero {
         height: calc(100vh - 100px);
         padding: 1rem;
         padding-bottom: 3rem;
-    }
-
-    .hero__perfil {
-        max-width: 200px;
-        max-height: 200px;
-        align-self: center;
     }
 
     .hero__container {
