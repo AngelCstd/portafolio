@@ -53,6 +53,10 @@ label{
     align-items: center;
 }
 
+.formcontacto__input--file{
+    border: none;
+}
+
 .formcontacto__boton {
     margin-top: 1rem;
     padding: 1rem;
@@ -60,5 +64,5 @@ label{
     border-radius: 10px;
     background-color: var(--color-azul);
     color: var(--color-blanco);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.272);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.496);
 }
