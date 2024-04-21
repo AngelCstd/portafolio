@@ -17,7 +17,7 @@ main.hero {
 }
 
 .hero__bio {
-    width: 25ch;
+    width: 30ch;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ main.hero {
     border-radius: 18px;
     background-color: var(--color-naranja);
     color: var(--color-blanco);
-    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.426);
+    box-shadow: 2px 1px 5px #0000006d;
 }
 
 
@@ -69,7 +69,6 @@ main.hero {
 
 /*PC - Inicio*/
 @media (width > 768px) {
-
     /*Titulo*/
     main.hero {
         gap: 10vw;

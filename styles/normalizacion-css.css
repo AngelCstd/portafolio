@@ -2,38 +2,28 @@
     --color-blanco: #f4f2ef;
     --color-azul: #1e3958;
     --color-naranja: #e68c38;
-    --color-beige: #d8d1bd;
     --color-amarillo: #f0b000;
 }
-
-img {
-    width: 50vw;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: var(--color-blanco);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.2;
     position: relative;
 }
-
 ol,
 ul,
 li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
     color: #000;
 }
-
 section {
     position: relative;
 }
