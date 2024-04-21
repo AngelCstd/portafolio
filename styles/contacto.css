@@ -10,15 +10,12 @@ main.formcontacto {
     color: var(--color-blanco);
     min-height: calc(100vh - 65.2px);
 }
-
 .formcontacto__titulo {
     font-size: 1.8rem;
 }
-
 .formcontacto__indicaciones {
     font-size: 1.3rem;
 }
-
 .formcontacto__form {
     display: flex;
     flex-direction: column;
@@ -29,34 +26,35 @@ main.formcontacto {
     background-color: var(--color-blanco);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.579);
 }
-
 label{
     color: #000;
     align-self: flex-start;
     margin: .7rem 0 .3rem;
+    font-size: .9rem;
 }
-
 .formcontacto :where(input, textarea) {
     padding: .8rem .5rem .6rem;
     border: none;
     border-radius: 10px;
     border: 1px solid #0000005b;
 }
-.formcontacto__label{
-    align-self: center;
-}
-.formcontacto div{
+.formcontacto fieldset{
     display: flex;
     flex-wrap: wrap;
     gap: 0 1rem;
     justify-content: space-around;
     align-items: center;
-}
-
-.formcontacto__input--file{
+    padding: 1rem 0;
+    margin-top: 1rem;
     border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.412);
 }
-
+main.formcontacto .formcontacto__legend{
+    color: #000;
+}
+.formcontacto__input--file{
+    margin: 1rem 0 0;
+}
 .formcontacto__boton {
     margin-top: 1rem;
     padding: 1rem;

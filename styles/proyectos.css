@@ -19,9 +19,6 @@ section.proyectos .container>h1{
     align-self: flex-start;
     font-size: 2.5rem;
 }
-section.proyectos .container>p{
-    text-align: justify;
-}
 .tecnologias__list {
     width: 100%;
     max-width: 400px;
@@ -30,6 +27,14 @@ section.proyectos .container>p{
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1rem;
+    position: relative;
+    margin-top: 2rem;
+}
+.tecnologias__list::before{
+    content: "Tecnologias usadas:";
+    position: absolute;
+    top: -2rem;
+    font-size: 12px;
 }
 .tecnologias__item {
     display: flex;
@@ -82,6 +87,11 @@ section.proyectos .container>p{
 .fondo__azul .botones a:first-child {
     background-color: var(--color-blanco);
     color: var(--color-azul);
+}
+@media (width > 465px) {
+    .proyectos {
+        padding: 2rem;
+    }
 }
 @media (width > 765px) {
     .pantallaMuestra{

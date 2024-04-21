@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles/normalizacion-css.css" />
   <link rel="stylesheet" href="./styles/BarraDeNavegacion.css" />
   <link rel="stylesheet" href="./styles/contacto.css" />
+  <link rel="shortcut icon" href="./archivos/Icons/logo.svg" type="image/x-icon">
   <title>Contacto - AngelCstd</title>
 </head>
 
@@ -53,21 +54,21 @@
       <label for="nombre">Nombre:</label>
       <input class="formcontacto__input formcontacto" type="text" required name="nombre" id="nombre"
         placeholder="Nombre" pattern="^.{1,50}$" />
-
+    
       <label for="email">E-mail:</label>
       <input class="formcontacto__input formcontacto" type="email" required name="email" id="email"
         placeholder="E-mail" />
-
+    
       <label for="asunto">Asunto:</label>
       <input class="formcontacto__input formcontacto" type="text" required name="asunto" id="asunto"
         placeholder="Asunto" pattern="^.{1,50}$" />
-
+    
       <label for="mensaje">Mensaje:</label>
       <textarea class="formcontacto__textarea formcontacto" rows="3" required cols="40" name="mensaje" id="mensaje"
         placeholder="Mensaje"></textarea>
-
-      <label class="formcontacto__label">¿Qué tipo de trabajo quieres que haga?</label>
-      <div>
+    
+      <fieldset>
+        <legend class="formcontacto__legend">¿Qué tipo de trabajo quieres que haga?</legend>
         <label for="empleado">
           <input type="radio" id="empleado" name="trabajo" value="empleado">
           Empleado
@@ -80,9 +81,10 @@
           <input type="radio" id="consultoria" name="trabajo" value="consultoria">
           Consultoría
         </label>
-      </div>
-      <label class="formcontacto__label">¿Sobre cual tema es el trabajo?</label>
-      <div>
+      </fieldset>
+    
+      <fieldset>
+        <legend class="formcontacto__legend">¿Sobre cuál tema es el trabajo?</legend>
         <label for="Frontend">
           <input type="checkbox" id="Frontend" name="tema" value="Frontend">
           Frontend
@@ -95,16 +97,16 @@
           <input type="checkbox" id="DataBase" name="tema" value="DataBase">
           Bases de datos
         </label>
-      </div>
-
+      </fieldset>
+    
       <label for="file-input" class="formcontacto__label--file">
-        ¿Tienes algun dibujo o idea que quieras que realicemos?
+        ¿Tienes algún dibujo o idea que quieras que realicemos?
         <input id="file-input" type="file" class="formcontacto__input--file">
       </label>
-
-
+    
       <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
     </form>
+    
   </main>
 </body>
 

@@ -10,7 +10,6 @@ section.resume {
     overflow: hidden;
     height: auto;
 }
-
 section.resume>h1 {
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
@@ -21,7 +20,6 @@ section.resume>h1 {
     right: -3rem;
     z-index: 0;
 }
-
 section.resume>h1::before {
     content: "RESUMEN";
     position: absolute;
@@ -29,7 +27,6 @@ section.resume>h1::before {
     left: 0;
     z-index: -1;
 }
-
 /*Tablet Vertical - Resumen*/
 @media (width > 540px) {
     section.resume {
@@ -41,7 +38,6 @@ section.resume>h1::before {
         right: -1rem;
     }
 }
-
 /*PC - Resumen*/
 @media (width > 765px) {
     section.resume {
@@ -49,45 +45,38 @@ section.resume>h1::before {
         justify-content: space-between;
     }
 }
-
 /*Pantallas grandes - Resumen*/
 @media (width > 900px) {
     section.resume {
         padding: 3rem 3rem 1rem;
     }
-
     section.resume>h1 {
         top: -2rem;
         right: 2rem;
     }
 }
-
 /*************************************************************************/
 /*Mobile - Listas */
 .resume__container--lista {
     padding: .5rem;
     margin: .5rem;
 }
-
 .resume__container--lista>h2 {
     color: var(--color-amarillo);
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
-
 .resume__lista {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
 .resume__item {
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
     position: relative;
 }
-
 .resume__item::before {
     content: '';
     position: absolute;
@@ -97,7 +86,6 @@ section.resume>h1::before {
     height: calc(100% + 1.2rem);
     background-color: var(--color-blanco);
 }
-
 .resume__item::after {
     content: '';
     position: absolute;
@@ -108,40 +96,31 @@ section.resume>h1::before {
     background-color: var(--color-amarillo);
     border-radius: 50%;
 }
-
 .resume__item:last-child::before {
     display: none;
 }
-
 .resume__ano {
     font-size: 20px;
 }
-
 .resume__subcontainer {
     font-size: 16px;
 }
-
 .resume__aprendizajeobtenido {
     margin-top: 5px;
     font-size: 12px;
 }
-
 .resume__aprendizaje--experiencia {
     background-color: var(--color-amarillo);
     color: #000;
     margin-left: -1rem;
 }
-
 .resume__aprendizaje--experiencia>h2 {
     color: #000;
 }
-
 .resume__aprendizaje--experiencia .resume__item::after {
     content: '';
     background-color: var(--color-azul);
-
 }
-
 /*Tablet Vertical - Listas*/
 @media (width > 540px) {
     .resume__item {
@@ -150,12 +129,10 @@ section.resume>h1::before {
         justify-content: space-between;
         align-items: center;
     }
-
     .resume__subcontainer {
         width: 70%;
     }
 }
-
 /*PC - Listas*/
 @media (width > 765px) {
     .resume__item {
@@ -164,33 +141,42 @@ section.resume>h1::before {
         justify-content: flex-start;
         align-items: flex-start;
     }
-
     .resume__ano {
         font-size: 18px;
     }
-
     .resume__subcontainer {
         width: 100%;
     }
-
     .resume__container {
         width: 50%;
         max-width: 500px;
     }
 }
-
 /*Mobile - Habilidades*/
 .resume__habilidades {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.resume__table {
+    width: 80%;
+    border-collapse: collapse;
+}
+.resume__tablehead {
+    color: var(--color-amarillo);
+    font-size: 1.4rem;
+}
+.resume__tableheader,
+.resume__tabledata {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ffffffba;
+}
 .resume__habilidades>h2 {
     color: var(--color-amarillo);
     margin: 1.5rem;
     align-self: flex-start;
 }
-
 .resume_habilidades__list {
     align-self: center;
     display: flex;
@@ -199,34 +185,28 @@ section.resume>h1::before {
     gap: 1rem 2rem;
     padding: 1rem;
 }
-
 .resume_habilidades__item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .resume_habilidades__item img {
     width: 60px;
 }
-
 .resume_habilidades__item img:hover {
     transform: scale(90%);
     filter: brightness(80%);
     transition: all .2s ease;
 }
-
 .resume_habilidades__item p {
     font-size: 12px;
 }
-
 @media (width > 540px) {
     .resume_habilidades__list {
         padding: 2rem;
         gap: 1rem 3.5rem;
     }
 }
-
 /*PC - Habilidades*/
 @media (width > 765px) {
     .resume_habilidades__list {
@@ -237,21 +217,4 @@ section.resume>h1::before {
     .resume__habilidades {
         margin-top: 5rem;
     }
-}
-
-.resume__table {
-    width: 80%;
-    border-collapse: collapse;
-}
-
-.resume__tablehead {
-    color: var(--color-amarillo);
-    font-size: 1.4rem;
-}
-
-.resume__tableheader,
-.resume__tabledata {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ffffffba;
 }
