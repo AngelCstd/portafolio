@@ -1,11 +1,7 @@
-:root {
-    --color-barra-navegacion: var(--color-blanco);
-}
 /*Mobile - Barra de navegacion*/
 header.menu__header {
     position: sticky;
     top: 0;
-    background-color: var(--color-barra-navegacion);
     padding: .7rem;
     z-index: 10;
 }
@@ -30,7 +26,7 @@ header.menu__header nav {
 
 header.menu__header ul {
     position: fixed;
-    background-color: var(--color-barra-navegacion);
+    background: radial-gradient(150% 150% at 50% 5%, #050505 40%, #6633ee 100%);
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -83,6 +79,7 @@ header.menu__header ul img {
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 1rem;
+        background: none;
     }
 
 }

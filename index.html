@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div style="position: absolute; inset: 0; z-index: -10; height: 100%; width: 100%; display: flex; align-items: center; padding: 24px 5px; background: radial-gradient(200% 125% at 50% 10%, #050505 40%, #6633ee 100%);"></div>
 
   <!-- Barra de navegacion -->
   <header class="menu__header">
@@ -49,7 +50,7 @@
   <!-- Inicio -->
   <main class="hero" id="home">
     <div class="hero__container">
-      <h2 class="hero__bio">Angel Castañeda<br>Desarrollador Front End</h2>
+      <h1 class="hero__bio">Angel Castañeda<br>Desarrollador Front End</h1>
       <h3 class="hero__bio--info">
         Soy estudiante de Ingenieria en computación, eterno autodidacta
       </h3>
@@ -75,7 +76,13 @@
     <img class="hero__perfil" src="./archivos/img/inicio.jpg" />
   </main>
   <!-- Fin inicio -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Redirige a la nueva URL
+    window.location.href = 'https://portfolio-git-main-angelcstds-projects.vercel.app/';
+});
 
+</script>
 
 </body>
 

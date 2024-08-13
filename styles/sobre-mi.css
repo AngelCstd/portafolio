@@ -3,6 +3,7 @@ main.sobremi {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    background-color: #000;
 }
 .sobremi__container{
     display: flex;
